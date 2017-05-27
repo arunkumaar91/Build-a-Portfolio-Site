@@ -1,0 +1,295 @@
+/* Section: Common */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* To ensure images, videos, objects not to overlap in the webpage: Default */
+
+img, embed,
+object, video {
+max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inconsolata', monospace;
+  color: #2d3c49;
+}
+
+p {
+  text-align: center;
+  padding: 2px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Section: Content */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.row {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+  color: #4a4848;
+  max-width: 100%;
+}
+
+a:hover, a:visited, a:link, a:active {
+  color: #4f4f4f;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+}
+
+.header__logo {
+  padding-left: 50px;
+  padding-top: 20px;
+  width: 200px;
+}
+
+.header__title {
+  width: 80%;
+  text-align: right;
+}
+
+.header__tagline {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.image__inner {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.ninja__logo {
+  height: 450px;
+  margin: 0;
+}
+
+.project__tagline {
+  text-align: left;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  padding-left: 20px;
+}
+
+.project__details {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.project__inner {
+  margin: 10px;
+}
+
+.project__image {
+  margin-left: 10px;
+}
+
+/* Section: Footer */
+
+footer {
+  background: black;
+  color: white;
+  font-size: .8em;
+  margin-left: 5px;
+  max-width: 100%;
+  height: 150px;
+  margin-bottom: 25px;
+}
+
+.content__container{
+  max-width: 100%;
+  width: 1300px;
+}
+
+#contact__me {
+  color: #a1a5a6;
+}
+
+ul.social {
+  display: block;
+  text-align: center;
+}
+
+ul.social li {
+  font-size: 3em;
+  display: inline;
+  padding: 0 2%;
+}
+
+ul.social li a {
+  color: #ffffff;
+}
+
+ul.social li.mail a:hover {
+  color: #dd4b39;
+}
+
+ul.social li.linkedin a:hover {
+  color: #007bb6;
+}
+
+ul.social li.facebook a:hover {
+  color: #3b5998;
+}
+
+ul.social li.github a:hover {
+  color: #ffffff;
+}
+
+ul.social li.twitter a:hover {
+  color: #00aced;
+}
+
+ul.social li.instagram a:hover {
+  color: #517fed;
+}
+
+.copyright__tagline {
+  text-align: center;
+  max-width: 100%;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .ninja__logo {
+    height: 450px;
+    width: 750px;
+  }
+
+  .project__details {
+    flex-flow: wrap column;
+  }
+
+  .project__inner {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .project__image {
+    max-width: 100%;
+  }
+
+  footer ul li {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__logo {
+    width: 100%;
+    text-align: center;
+    padding-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .header__title {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}
